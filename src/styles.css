@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #f3f3f3;
+}
+
+.main-content {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-top: 100px;
+  margin-bottom: -225px;
+}
+
+  .main-content h1, .main-content h1 > span {
+    font: 500 50px 'Poiret One', cursive;
+  }
+
+    .main-content h1 span > strong {
+      font: 600 50px 'Poiret One', cursive;
+    }
+
+.main-content:after {
+  content: "";
+  display: block;
+}
+
+.main-content:after {
+  height: 225px;
+}

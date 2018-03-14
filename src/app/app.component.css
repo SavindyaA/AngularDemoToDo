@@ -1,0 +1,117 @@
+
+.item h4 {
+  text-align: center;
+}
+
+.item {
+  width: 30%;
+  height: auto;
+  min-height:30px;
+  background: #FFFFFF;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+  .item h4 {
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;
+    padding: 5px;
+    word-break: break-word;
+  }
+
+.raised {
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* button div */
+#buttons {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* start da css for da buttons */
+.btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+  color: #fff;
+  display: inline-block;
+  z-index: 0;
+}
+
+  .btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+
+.dark-blue {
+  background-color: #485d70;
+  box-shadow: 0px 5px 0px 0px #445768;
+}
+
+  .dark-blue:hover {
+    background-color: #6d8daa;
+  }
+
+.angular-red {
+  background-color: #dd0031;
+  box-shadow: 0px 5px 0px 0px #a70028;
+}
+
+  .angular-red:hover {
+    background-color: #f8305c;
+  }
+
+.gray {
+  background-color: lightgray;
+  box-shadow: 0px 5px 0px 0px #909090;
+}
+
+  .gray:hover {
+    background-color: lightgray;
+  }
+
+
+.form-group {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.form-control {
+  font-size: .9rem;
+  border: 1px solid #e1e5f1;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.todo-input {
+  margin-left: -12px;
+}

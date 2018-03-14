@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+<div class="main-content" style="text-align:center">
+  <div class="overlay">
+    <h1>
+      Welcome to <span [innerHTML]="title"></span>!
+    </h1>
+    <div>
+      <br />
+      <div class="form-group">
+        <input class="form-control todo-input" type="text" placeholder="Enter an item to do ..." [(ngModel)]="todoItemModel.ItemName" (keyup)="Onkeyup()" (focus)="OnFocus()" />
+        <!--<button type="button" class="btn purple" (click)="AddItem()">Add Item</button>-->
+      </div>
+
+      <a href="#" (click)="AddItem()" class="btn angular-red">Add Item</a>
+
+      <a href="#" (click)="ClearAll()" class="btn dark-blue" [ngClass]="{'gray': buttonDisabled }">Clear All</a>
+      <!--<button class="btn purple" type="button" [disabled]="buttonDisabled" (click)="ClearAll()">Clear All</button>-->
+      <br />
+      <br />
+      <label *ngIf="enableLabel">~ You just cleared all the items ~</label>
+
+      <label *ngIf="EnableAddLabel">~ You Are Adding <b>{{todoItemModel.ItemName}}</b> ~</label>
+    </div>
+    <div>
+      <p></p>
+    </div>
+    <div style="text-align:center">
+      <div class="item raised" *ngFor="let item of itemList; index as i;">
+        <h4>{{i+1}}. {{item.ItemName}}</h4>
+      </div>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+    <div style="text-align:center">
+      <div class="item raised" *ngFor="let item of list;">
+        <h4>{{item.ItemName}}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
